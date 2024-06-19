@@ -7,14 +7,14 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '@/components';
+} from '@/components/ui/sheet';
 import Link from 'next/link';
 import Image from 'next/image';
 import { sidebarLinks } from '@/constants';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
-export const MobileNav = ({ user }: MobileNavProps) => {
+const MobileNav = ({ user }: MobileNavProps) => {
   const pathname = usePathname();
 
   return (
@@ -74,3 +74,5 @@ export const MobileNav = ({ user }: MobileNavProps) => {
     </section>
   );
 };
+
+export default MobileNav;

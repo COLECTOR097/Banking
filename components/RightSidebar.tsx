@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { BankCard } from '@/components';
+import BankCard from '@/components/BankCard';
 
-export const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
+const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) => {
   return (
     <aside className="right-sidebar">
       <section className="flex flex-col pb-8">
@@ -54,3 +54,5 @@ export const RightSidebar = ({ user, transactions, banks }: RightSidebarProps) =
     </aside>
   );
 };
+
+export default RightSidebar;

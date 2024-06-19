@@ -1,6 +1,7 @@
-import { AnimatedCounter, DoughnutCart } from '@/components';
+import AnimatedCounter from '@/components/AnimatedCounter';
+import DoughnutCart from '@/components/DoughnutCart';
 
-export const TotalBalanceBox = ({
+const TotalBalanceBox = ({
   accounts = [],
   totalBanks,
   totalCurrentBalance,
@@ -22,3 +23,5 @@ export const TotalBalanceBox = ({
     </section>
   );
 };
+
+export default TotalBalanceBox;

@@ -5,7 +5,7 @@ import { Doughnut } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export const DoughnutCart = ({ accounts }: DoughnutChartProps) => {
+const DoughnutCart = ({ accounts }: DoughnutChartProps) => {
   const data = {
     datasets: [
       {
@@ -31,3 +31,5 @@ export const DoughnutCart = ({ accounts }: DoughnutChartProps) => {
     />
   );
 };
+
+export default DoughnutCart;

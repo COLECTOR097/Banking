@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
-export const Sidebar = ({ user }: SiderbarProps) => {
+const Sidebar = ({ user }: SiderbarProps) => {
   const pathname = usePathname();
 
   return (
@@ -47,3 +47,5 @@ export const Sidebar = ({ user }: SiderbarProps) => {
     </section>
   );
 };
+
+export default Sidebar;
